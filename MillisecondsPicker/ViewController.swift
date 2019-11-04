@@ -9,12 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+    
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+    let pickerViewFrame = CGRect(x: 10, y: 100, width: 400, height: 200)
+    let timePicker = MillisecondPickerView(frame: pickerViewFrame, initDate: Date(), isDateShow: true)
+    view.addSubview(timePicker)
+  }
 }
 
